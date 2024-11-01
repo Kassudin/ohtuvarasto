@@ -42,7 +42,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisaa_liikaa_tavaraa(self):
         self.varasto.lisaa_varastoon(12)
         
-        # tilaa pitäisi olla 0. Ylimäärä hukkaan!
+        # tilaa pitäisi olla 0. Ylimäärä hukkaan!!
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
 
     def test_ota_liikaa_tavaraa(self):
