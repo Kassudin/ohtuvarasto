@@ -79,4 +79,4 @@ class TestVarasto(unittest.TestCase):
     def test_tarkista_merkkijono(self):
         self.varasto.lisaa_varastoon(10)
 
-        self.assertAlmostEqual("saldo = 10, vielä tilaa 0")
+        self.assertAlmostEqual(str(self.varasto),"saldo = 10, vielä tilaa 0")
